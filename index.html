@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/signup.css">
+    
+    <script src="js/signup.js"></script>
+</head>
+<body>
+
+    <div class="alert" id="blank">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>Really?</strong> <b>You dont want to leave those fields blank <span style='font-size:20px;'>&#128521;</span></b>
+    </div>
+    
+    <div class="alert" id="incorrect">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>Oops!</strong> <b> Username or Password is incorrect<span style='font-size:20px;'>&#128533;</span></b>
+    </div>
+
+
+
+    <div class="signupform">
+        <div class="bgimage"></div>
+        <div class="heading">
+           GLP Learning Model Builder
+        </div>
+        <h3>Sign In</h3>
+        <form name="sign-up">
+         <i class="fa fa-user"></i> <input type="text" name="username" placeholder="Username" id="username">
+            
+       <div class="div">
+            <i class="fa fa-lock"></i>
+            <input type="password" name="password" placeholder="Password" id="password">
+       </div> 
+            <button class="sign-btn" type="button" onclick="validate()">Sign In</button>
+        </form>
+    </div>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    rel="stylesheet">
+</body>
+</html>

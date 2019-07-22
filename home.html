@@ -1,0 +1,78 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <meta charset="UTF-8">
+   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/alert.css">
+</head>
+<body>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+
+    <div class="container">
+            <div class="row">
+                    <div class="right">
+                        <form id="login_form">
+                            
+                            <label for="city"><b>City</b></label>
+                            <div class="custom-select">
+                             <select name="city" id="cityOptions">
+                                    //getting dynamic content here
+                             </select>  
+                            </div>
+                            <label for="state"><b>State</b></label>
+                            <div class="custom-select">
+                            
+                            <select name="state" id="stateOptions">
+                                    //getting dynamic content here
+                            </select>
+                            </div>
+                            <label for="country"><b>Country</b></label>
+                            <div class="custom-select">
+                        
+                            <select name="country" id="countryOptions">
+                                    <option value = "noCountry" >choose country</option>
+                                    <option value="France">France</option>
+                                    <option value="United States">United States</option>
+                            </select>
+                            </div>
+
+                            
+                        <br>
+                       
+                                <button class="submit" type="submit">Submit</button>
+                        
+                          
+                        </form>
+                    </div>
+                    <div class="left">
+                            <div class="alert" id="message">
+                                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                                    <strong>Oops!</strong> <b>No results match your search.</b>
+                            </div>
+                            <table>
+                                    <thead>
+                                            <tr>
+                                                    <th>CITY</th>
+                                                    <th>PHONE</th>
+                                                    <th>STATE</th>
+                                                    <th>COUNTRY</th>
+                                                </tr>
+                                        
+                                    </thead>
+                            
+                                    <tbody id="user-data">
+                            
+                                    </tbody>      
+                                </table>
+                    </div>
+           </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
